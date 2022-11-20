@@ -17,7 +17,7 @@ public:
     imag = i;
   }
 
-  Complex calculateSum(Complex &c1, Complex &c2)
+ /* Complex calculateSum(Complex &c1, Complex &c2)
   {
     Complex c3(0, 0);
     c3.real = c1.real + c2.real;
@@ -33,7 +33,7 @@ public:
     c3.imag = c1.imag - c2.imag;
     print(c1, c2, c3, "Diff");
     return c3;
-  }
+  }*/
 
   Complex calculateProd(Complex &c1, Complex &c2)
   {
