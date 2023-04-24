@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="bosy2page.css">
+  <title>Booking Form</title>
+</head>
+<body><!--yo file projecttest.html.html ma link garya cha jun main file ho-->
+  <script src="java2page.js"></script>
+  <h1>Hotel Booking Form</h1>
+  <form id="booking-form" action="" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
+      <div class="error-message"></div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+      <div class="error-message"></div>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required placeholder="Mobile.No">
+      <div class="error-message"></div>
+    </div>
+    <div class="form-group">
+      <label for="checkin">Check-in:</label>
+      <input type="date" id="checkin" name="checkin" required>
+      <div class="error-message"></div>
+    </div>
+    <div class="form-group">
+      <label for="checkout">Check-out:</label>
+      <input type="date" id="checkout" name="checkout" required>
+      <div class="error-message"></div>
+    </div>
+    <div class="form-group">
+      <label for="terms">Agree to Terms of Service:</label>
+      <input type="checkbox" name="agree">
+      <span class="error"><php echo $agreeErr;?></span>
+    </div>
+    <button type="submit">Book</button>
+  </form>
+  
+
+</body>
+</html>

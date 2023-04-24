@@ -1,0 +1,147 @@
+/* Styles for all screens */
+/*Styles of form only*/
+
+body {
+  background-image: url("https://media.radissonhotels.net/image/radisson-blu-hotel-grt-chennai/pool/16256-116516-f75891811_3xl.jpg?impolicy=HomeHero");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#booking-form {
+  max-width: 800px;
+  margin-bottom: 75px;
+  margin-left:50px;
+  margin-right:50px;
+  margin-top:auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.form-group input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.form-group.error input {
+  border-color: #dc3545;
+}
+
+.form-group .error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+}
+
+button {
+  position: absolute;
+  right: 45%;
+  width: 100px;
+  height: 29px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-top: -5px;
+}
+
+/* Media queries for smaller screens */
+
+@media only screen and (max-width: 768px) {
+  #booking-form {
+    max-width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+  }
+  
+  .form-group input {
+    padding: 0.4rem;
+  }
+  
+  button {
+    width: 80px;
+    height: 24px;
+    font-size: 12px;
+  }
+}
+
+/* Media queries for even smaller screens */
+
+@media only screen and (max-width: 480px) {
+  #booking-form {
+    max-width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  h1 {
+    font-size: 1.2rem;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+  }
+  
+  .form-group input {
+    padding: 0.3rem;
+  }
+  
+  button {
+    width: 60px;
+    height: 20px;
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #booking-form {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .form-group label {
+    font-size: 24px;
+  }
+  
+  .form-group input {
+    padding: 0.75rem;
+  }
+  
+  button {
+    width: 120px;
+    height: 35px;
+    font-size: 16px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
